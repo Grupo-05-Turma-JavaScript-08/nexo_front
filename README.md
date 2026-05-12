@@ -1,69 +1,71 @@
-# React + TypeScript + Vite
+# Nexo Frontend - Plataforma de Seguros Automotivos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Front-end do projeto **Nexo**, uma aplicacao web para gestao de seguros automotivos. A interface permite que usuarios naveguem por funcionalidades de cadastro, autenticacao, consulta de planos, gerenciamento de veiculos e interacao com a API backend.
 
-Currently, two official plugins are available:
+O projeto foi desenvolvido em equipe com foco em integracao frontend/backend, consumo de APIs REST, rotas, estados de autenticacao e experiencia de uso para um sistema de seguros.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Links do Projeto
 
-## Expanding the ESLint configuration
+- Repositorio front-end: https://github.com/Grupo-05-Turma-JavaScript-08/nexo_front
+- Repositorio back-end: https://github.com/Grupo-05-Turma-JavaScript-08/nexo_back
+- Deploy front-end: adicionar URL do Render
+- Deploy back-end: adicionar URL do Render
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Principais Funcionalidades
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Tela inicial e navegacao principal.
+- Cadastro e login de usuarios.
+- Consumo de API REST com Axios.
+- Gerenciamento de veiculos.
+- Gerenciamento e visualizacao de planos de seguro.
+- Dashboards para cliente e administrador.
+- Rotas protegidas e contexto de autenticacao.
+- Feedbacks visuais com notificacoes.
+- Interface responsiva construida com React, TypeScript e Tailwind CSS.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Tecnologias
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Axios
+- React Router DOM
+- Framer Motion
+- React Toastify
+- Git/GitHub
+- Render
+
+## Contexto Tecnico
+
+Este frontend demonstra pratica com desenvolvimento de interfaces modernas, consumo de APIs REST, controle de rotas, organizacao por componentes e integracao com backend NestJS. O projeto complementa a API Nexo e evidencia experiencia em fluxo full stack com TypeScript.
+
+## Como Rodar Localmente
+
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Para gerar a build de producao:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
+npm run preview
 ```
+
+## Estrutura Principal
+
+```text
+src/
+  components/
+  contexts/
+  models/
+  pages/
+  services/
+  utils/
+```
+
+## Autor
+
+Desenvolvido em equipe no bootcamp da Generation Brasil, com participacao de Gabriel Martins no desenvolvimento e integracao da aplicacao.
